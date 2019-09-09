@@ -44,34 +44,22 @@
     margin-top: 30px;
     font-family:Microsoft JhengHei;
 }
-/* #buttons{
-    width:100%;
-    height:50px;
-    background-color:#CFE2EF;
+
+#navbarDropdownMenuLink{
+    color:#172F3E;
     font-size: 24px;
     font-family:Microsoft JhengHei;
-    display: flex;
-    line-height:50px;
-    justify-content: space-evenly;
+}
+.nav-item{
+    font-size: 24px;
+    font-family:Microsoft JhengHei;
+}
+.dropdown-item{
     color:#172F3E;
-    
-} */
-/* .btn{
-    width:180px;
-    height:50px;
-    text-align: center;
-    font-weight: bolder;
+    font-size: 24px;
+    font-family:Microsoft JhengHei;
 
 }
-.btn :hover{
-    width:200px;
-    background-color: #172F3E;
-    color:white;
-    cursor: pointer;
-    transition: .6s
-     
-    
-} */
 #board{
     display: flex;
     width: 100%;
@@ -142,7 +130,7 @@
     width: 50%;
     height: 60%;
     margin-top: 5%;
-    font-size:36px;
+    font-size:32px;
     color: #f5f100;
     
 }
@@ -156,51 +144,137 @@
     color: lightcyan;
     overflow: auto;
 }
-#buttons{
-    padding: 0px;
-    list-style: none;
-    background: #CFE2EF;
-    /* text-align: center; */
-    /* justify-content: center; */
-    font-size: 24px;
-    font-family:Microsoft JhengHei;
-    display: flex;
-    /* line-height:50px; */
-    font-weight: bolder;
-    justify-content: space-evenly;
-    color:#172F3E;
-}
-.btn{
-    display: inline-block;
-    position: relative;
-    line-height: 21px;
-    /* text-align: left; */
-    /* text-align: center; */
-}
-ul li a{
-    display: block;
-    padding: 8px 25px;
-    color: #172F3E;
-    text-decoration: none;
-   
-}
-ul li a:hover{
-    margin: 0;
-    color: #fff;
-    background: #172F3E;
-  
-}
-ul li ul.dropdown{
-    min-width: 100%; /*Set width of the dropdown*/
-    background: #f2f2f2;
-    display: none;
-    position: absolute;
-    z-index: 999;
-    left: 0;
-}
-ul li:hover ul.dropdown{
-    display: block;	/* Display the dropdown */
-}
-ul li ul.dropdown li{
-    display: block;
-}
+
+/*-----------------視窗最小化內容-------------------*/
+@media screen and (max-width: 900px){
+    #alltitle{
+        width: 100%;
+        height: 30%;
+        /* background-color:red; */
+        flex-direction: column;
+
+    }
+     .schoollogo{
+        width: 60%;
+        height: 20px;
+        background-size: cover;
+    } 
+    .labname{
+        width:93%; 
+        height:50px ;
+        /* background-color: yellow; */
+        text-align: center; /*文字置中*/
+        line-height:50px;
+        font-size: 20px;
+        margin-left:0px;
+        margin-top: 5px;
+        font-family:Microsoft JhengHei;
+    }
+    /*------------下半部------------*/
+    #board{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 800px;
+        /* background-color:red; */
+        margin:0px;
+    }
+    .welcome{
+        width: 95%;
+        height: 250px;
+        /* background-color:plum; */
+        padding: 0px;
+        margin-left:0px;
+    }
+    .pic{
+        width: 100%;
+        height: 100px;
+        margin-top: 0px;
+        background-size: cover;/*圖片自動全螢幕展示*/
+
+    }
+    .content{
+        /* display: flex; */
+        width: 100%;
+        height: 330%;
+        /* background-color:pink; */
+        color: #172F3E;
+        margin-left: 0px;
+    
+    }
+    #start{
+        font-size: 32px;
+        font-family:Comic Sans MS;
+        padding: 5px;
+    }
+    #MD{
+        padding: 5px;
+        font-size: 20px;
+        font-family:Microsoft JhengHei;
+    }
+    .newsboard{
+        width: 98%;
+        height: 800px;
+        margin-top: 360px;
+        margin-left:0px;
+        background-color: #437698;
+        font-family:Microsoft JhengHei; 
+    }
+    .newstitle{
+        width: 92%;
+        height: 10%;
+        display: flex;
+        /* background-color: red; */
+        margin: 15px;
+    }
+    
+    .icon{
+        width: 30%;
+        height:185%;
+        margin:5px;
+    
+    }
+    .thetitle{
+        width: 100%;
+        height: 60%;
+        margin-top: 1%;
+        font-size:26px;
+        color: #f5f100;
+        
+    }
+    
+    .news{
+        width: 96%;
+        height: 80%;
+        margin-left:5px;
+        margin-top: 30px;
+        /* background-color:pink; */
+        font-size:20px;
+        color: lightcyan;
+        overflow: auto;
+    }
+    #buttons{
+        padding: 0px;
+        list-style: none;
+        background: #CFE2EF;
+        /* text-align: center; */
+        /* justify-content: center; */
+        font-size: 24px;
+        font-family:Microsoft JhengHei;
+        display: flex;
+        /* line-height:50px; */
+        font-weight: bolder;
+        justify-content: space-evenly;
+        color:#172F3E;
+    }
+
+
+
+
+
+
+
+
+
+
+} 
