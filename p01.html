@@ -6,71 +6,73 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>工商暨交通數據分析實驗室</title>
     <link rel="stylesheet" href="style01.css">
-     
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 </head>
 
 
 <body>
+ <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    
     <div id="home">
         <div id="homepage">
             <div id="alltitle">
                 <div class="schoollogo"></div>
                 <div class="labname"> 工商暨交通數據分析實驗室 </div>
             </div>
-            <ul id="buttons">
-                <li class="btn"><a href="#">實驗室簡介&#9662;</a>
-                    <ul class="dropdown">
-                            <li><a href="#">實驗室介紹</a></li>
-                            <li><a href="#">得獎榮譽</a></li>
-                            <li><a href="#">活動剪影</a></li>
-                        </ul>
-                </li>
-                <li class="btn"><a href="#">指導教授 &#9662;</a>
-                    <ul class="dropdown">
-                            <li><a href="#">聯絡方式</a></li>
-                            <li><a href="#">重要學歷</a></li>
-                            <li><a href="#">重要經歷</a></li>
-                            <li><a href="#">演講邀請</a></li>
-                        </ul>
-                </li>
-                <li class="btn"><a href="#">研究方向 &#9662;</a></li>
-                <li class="btn"><a href="#">開授課程 &#9662;</a>
-                    <!-- <ul class="dropdown">
-                            <li><a href="#">Laptops</a></li>
-                            <li><a href="#">Monitors</a></li>
-                            <li><a href="#">Printers</a></li>
-                        </ul> -->
-                </li>
-                <li class="btn"><a href="#">研究論文 &#9662;</a>
-                    <ul class="dropdown">
-                            <li><a href="#">Journal Papers</a></li>
-                            <li><a href="#">Books</a></li>
-                            <li><a href="#">International Conference Paper</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <!-- <div id="buttons"> 
-                <div class="btn">
-                    <div class="name">實驗室簡介</div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <!-- <a class="navbar-brand" href="#">選單</a> -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            實驗室簡介
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">實驗室介紹</a>
+                            <a class="dropdown-item" href="#">得獎榮譽</a>
+                            <a class="dropdown-item" href="#">活動剪影</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            指導教授
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">聯絡方式</a>
+                            <a class="dropdown-item" href="#">重要學歷</a>
+                            <a class="dropdown-item" href="#">重要經歷</a>
+                            <a class="dropdown-item" href="#">演講邀請</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">研究方向</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">開授課程</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        研究論文
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Journal Papers</a>
+                        <a class="dropdown-item" href="#">Books</a>
+                        <a class="dropdown-item" href="#">International Conference Paper</a>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
-                
-                <div class="btn">
-                    <div class="name">指導教授</div>
-                </div>
-                
-                <div class="btn">
-                    <div class="name">研究方向</div>
-                </div>
-                
-                <div class="btn">
-                    <div class="name">研究論文</div>
-                </div>
-                
-                <div class="btn">
-                    <div class="name">開啟課程</div>
-                </div>
-                     
-            </div> -->
+              </nav>
             <div id="board">
                 <div class="welcome">
                     <div class="pic"></div>
