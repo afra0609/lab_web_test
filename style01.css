@@ -60,6 +60,20 @@
     font-family:Microsoft JhengHei;
 
 }
+ul li a:hover{
+    margin: 0;
+    background: #172F3E;
+  
+}
+#navbarDropdownMenuLink:hover{
+    color:white;
+}
+
+.nav-item:hover{
+    font-size: 24px;
+    font-family:Microsoft JhengHei;
+    color:white;
+}
 #board{
     display: flex;
     width: 100%;
@@ -215,7 +229,7 @@
     .newsboard{
         width: 98%;
         height: 800px;
-        margin-top: 360px;
+        margin-top: 280px;
         margin-left:0px;
         background-color: #437698;
         font-family:Microsoft JhengHei; 
@@ -229,10 +243,10 @@
     }
     
     .icon{
-        width: 30%;
-        height:185%;
+        width: 30%;        
         margin:5px;
-    
+        background-size: contain;
+        background-repeat: no-repeat;
     }
     .thetitle{
         width: 100%;
@@ -241,6 +255,9 @@
         font-size:26px;
         color: #f5f100;
         
+    }
+    .newstitle{
+        align-items: center;
     }
     
     .news{
