@@ -60,6 +60,20 @@
     font-family:Microsoft JhengHei;
 
 }
+ul li a:hover{
+    margin: 0;
+    background: #172F3E;
+  
+}
+#navbarDropdownMenuLink:hover{
+    color:white;
+}
+
+.nav-item:hover{
+    font-size: 24px;
+    font-family:Microsoft JhengHei;
+    color:white;
+}
 #board{
     display: flex;
     width: 100%;
