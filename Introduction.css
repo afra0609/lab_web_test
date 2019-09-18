@@ -342,13 +342,13 @@ hr{
         height: auto;
         /* background-color:yellow; */
         margin: 0px auto;
-        font-size: 50%;
+        font-size: 90%;
         color: #F5F5F5;
         line-height: 18px;
     }
     #panelB{
         width:90%;
-        height:400px;
+        height:500px;
         /* background-color:green; */
         margin-left: 5%;
         padding: 0.5%;
@@ -373,7 +373,7 @@ hr{
         -webkit-order: 1;
         order: 1;
         width:100%;
-        height:300px;
+        height:120px;
         /* background-color:pink; */
         background-image: url("https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
         background-size: cover;/*圖片自動全螢幕展示*/
@@ -394,7 +394,7 @@ hr{
         width: 80%;
         height: auto;
         /* background-color:yellow; */
-        font-size: 50%;
+        font-size: 90%;
         color: #172F3E;
         line-height: 18px;
     }
@@ -424,10 +424,10 @@ hr{
         font-size:120%;
     }
     .topic{  
-        font-size: 120%;
+        font-size: 100%;
     }
     .paper{
-        font-size: 120%;
+        font-size: 100%;
     }
     .topictxt{
         font-size: 80%;
