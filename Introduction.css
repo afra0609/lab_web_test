@@ -146,7 +146,7 @@ ul li ul.dropdown li{
     display: flex;    
 
 }
-.train{
+.train:nth-of-type(1){
     width:50%;
     height:400px;
     background-color:#99B0BE;
@@ -155,7 +155,7 @@ ul li ul.dropdown li{
     font-family:Microsoft JhengHei;
 
 }
-.pictrain{
+.pictrain:nth-of-type(2){
     width:50%;
     height:400px;
     /* background-color:pink; */
@@ -182,37 +182,257 @@ ul li ul.dropdown li{
     font-size: 105%;
     color: #172F3E;
 }
+hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
 /*---------------- 歷年實作議題 -----------------*/
 #portfolio{
+    display:flex;
     width:90%;
     /* background-color:red; */
     margin-left: 5%;
-    margin-top:2%;
-    text-align: center;
+    justify-content: center;
+    align-items: center; 
+}
+#por_title{
+    width:20%;
+    /* background-color:pink; */
     font-family:Microsoft JhengHei;
     font-size: 32px;
+
 }
+#icon{
+    width: 8%;
+    height:55px;
+    /* background-color:purple; */
+    background-image: url("https://image.flaticon.com/icons/svg/230/230345.svg"); 
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+} 
 
 #panelC{
     width:90%;
-    height:400px;
-    background-color:yellow;
+    height:auto;
+    /* background-color:yellow; */
     margin-left: 5%;
     padding: 0.5%;
-flex-direction: column;    
+    flex-direction: column;    
 }
+
 .ac_year{
     width: 100%;
-    height:10%;
+    height:auto;
     background-color:#1E567A;
     color: white;
     text-align: center;
     font-size:160%;
     font-family:Microsoft JhengHei;
 }
-th{
-    color: red;
-    font-family:Microsoft JhengHei;
-    background-color:white;
+.content{
+    width: 100%;
+    height: auto;
+    background-color:pink;
+    display: flex;
+    flex-wrap: wrap;
+}
+.topic{
+    width: 50%;
+    height: 6%;
+    background-color: #172F3E;
+    font-size: 150%;
+    color: white;
     text-align: center;
+    font-family:Microsoft JhengHei;
+    border-right:0.5px solid #99B0BE;
+}
+.paper{
+    width: 50%;
+    height: 6%;
+    background-color: #172F3E;
+    font-size: 150%;
+    color: white;
+    text-align: center;
+    font-family:Microsoft JhengHei;
+   
+
+}
+.topictxt{
+    width: 50%;
+    height: auto;
+    background-color: #E4EDF3;
+    border-right:0.5px solid #707070;
+    font-family:Microsoft JhengHei;
+    font-size: 140%;
+}
+.papertxt{
+    width: 50%;
+    height: auto;
+    background-color: #E4EDF3;
+    font-family:Microsoft JhengHei;
+    font-size: 140%;
+}
+/*-----------------視窗最小化內容-------------------*/
+@media screen and (max-width: 900px){
+    #alltitle{
+        width: 100%;
+        height: 30%;
+        /* background-color:red; */
+        flex-direction: column;
+
+    }
+     .schoollogo{
+        width: 60%;
+        height: 20px;
+        background-size: cover;
+    } 
+    .labname{
+        width:93%; 
+        height:50px ;
+        /* background-color: yellow; */
+        text-align: center; /*文字置中*/
+        line-height:50px;
+        font-size: 20px;
+        margin-left:0px;
+        margin-top: 5px;
+        font-family:Microsoft JhengHei;
+    }
+    #panelA{
+        width:90%;
+        height:400px;
+        /* background-color:green; */
+        margin-left: 5%;
+        padding: 0.5%;
+        flex-direction: column;  
+    
+    }
+    .pictheme{
+        width:100%;
+        height:300px;
+        /* background-color:#254F6A; */
+        background-image: url("https://images.unsplash.com/photo-1518607692857-bff9babd9d40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80");
+        background-size: cover;/*圖片自動全螢幕展示*/
+        background-position: center center;
+    }
+    .theme{
+        width:100%;
+        height:400px;
+        background-color:#254F6A;
+        flex-direction: row;
+        text-align: center; /*文字置中*/
+        line-height:50px;
+      
+    
+    }
+    .themetitle{
+        width: 50%;
+        height: auto;
+        /* background-color:white; */
+        margin: 0px auto;/*版面置中*/
+        font-size: 100%;
+        font-family:Microsoft JhengHei;
+        color: #F5F5F5;
+        margin-top: 3%;
+        line-height: 20px;
+    }
+    .themetxt{
+        width: 80%;
+        height: auto;
+        /* background-color:yellow; */
+        margin: 0px auto;
+        font-size: 50%;
+        color: #F5F5F5;
+        line-height: 18px;
+    }
+    #panelB{
+        width:90%;
+        height:400px;
+        /* background-color:green; */
+        margin-left: 5%;
+        padding: 0.5%;
+        flex-direction: column;  
+    
+    }
+    /* .item:nth-of-type(3)
+    -webkit-order: 4
+    order: 4 */
+    .train:nth-of-type(1){
+        -webkit-order: 2;
+        order: 2;
+        width:100%;
+        height:400px;
+        background-color:#99B0BE;
+        text-align: center; /*文字置中*/
+        line-height:50px;
+        font-family:Microsoft JhengHei;
+    
+    }
+    .pictrain:nth-of-type(2){
+        -webkit-order: 1;
+        order: 1;
+        width:100%;
+        height:300px;
+        /* background-color:pink; */
+        background-image: url("https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+        background-size: cover;/*圖片自動全螢幕展示*/
+        background-position: center center;
+    
+    }
+    .traintitle{
+        width: 50%;
+        height: auto;
+        /* background-color:white; */
+        font-size: 100%;
+        color: #172F3E;
+        margin-top: 3%;
+        line-height: 20px;
+    
+    }
+    .traintxt{
+        width: 80%;
+        height: auto;
+        /* background-color:yellow; */
+        font-size: 50%;
+        color: #172F3E;
+        line-height: 18px;
+    }
+    hr{
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    }
+
+    #portfolio{
+        display:flex;
+        width:90%;
+        /* background-color:red; */
+        margin-left: 5%;
+        justify-content: center;
+        align-items: center; 
+    }
+    #por_title{
+        width:70%;
+        /* background-color:pink; */
+        font-family:Microsoft JhengHei;
+        font-size: 22px;
+    
+    }
+
+    .ac_year{
+        font-size:120%;
+    }
+    .topic{  
+        font-size: 120%;
+    }
+    .paper{
+        font-size: 120%;
+    }
+    .topictxt{
+        font-size: 80%;
+    }
+    .papertxt{
+        font-size: 80%;
+    }
 }
